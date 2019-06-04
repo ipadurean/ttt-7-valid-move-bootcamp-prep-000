@@ -1,5 +1,11 @@
 # code your #valid_move? method here
-def 
+def valid_move?(board, index)
+  if (board[index] > 8) || (board[index] < 0)
+    false
+  else
+    position_taken?
+  end
+end
 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
